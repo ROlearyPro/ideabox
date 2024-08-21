@@ -1,8 +1,9 @@
-import Ideas from "./Ideas";
-import { useState } from "react";
-import Form from "./Form";
 
 import './App.css';
+import Form from "./Form";
+import Ideas from "./Ideas";
+import { useState } from "react";
+
 
 function App() {
   const dummyIdeas = [{ id: 1, title: 'Make sure login is secure', description: 'change passwords, usernames, etc.' },
@@ -24,7 +25,7 @@ function App() {
     <main className='App'>
       <h1>IdeaBox</h1>
       <Form addIdea={addIdea} />
-      <Ideas ideas={ideas} />
+      <Ideas ideas={ideas} deleteIdea={deleteIdea} />
     </main>
   )
 

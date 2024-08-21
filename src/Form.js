@@ -37,8 +37,7 @@ function clearInput(){
           onChange={event => setDescription(event.target.value)}
         />
 
-        <button>SUBMIT</button>
-      </form>
+<button onClick = { event => submitIdeas(event)}>SUBMIT</button>      </form>
     )
 }
 
